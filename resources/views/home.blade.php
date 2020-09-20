@@ -3,6 +3,8 @@
 @section('content')
 <div class="page-pad mobile-pad">
     <div class="container">
+        @include('messages.message')
+
         <div class="text-center pt-0 pb-4">
             <h4><i>Admin panel</i></h4>
         </div>

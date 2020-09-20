@@ -214,7 +214,9 @@
                                         <div class="card-body bg-blue-light">
                                             <a onclick="showForm()"><img src="{{ asset('storage/images/'.$product->image)}}" alt=""></a>
                                         </div>
-            
+                                        
+                                        <div class="sale">Save Rs. {{$product->saved_customer}}</div>
+
                                         <ul>
                                             <li class="w-icon active"><a onclick="showForm()">Buy now</a></li>
                                             
@@ -247,13 +249,13 @@
             <div class="card-body">
                 <div class="owl-slider">
                     <div class="pl-2">
-                        <strong>Categories/ Air Conditioner</strong>
+                        <strong>Categories/ Water Dispenser</strong>
                     </div>
         
                     <div id="carousel" class="product-slider owl-carousel">
                         @if(count($posts)>0)
                             @foreach($posts as $product)
-                                @if($product->category == "air conditioner")
+                                @if($product->category == "water dispenser")
                                 <div class="item">
                                     <div class="product-item">
                                         <div class="pi-pic">
@@ -261,6 +263,8 @@
                                                 <a onclick="showForm()"><img src="{{ asset('storage/images/'.$product->image)}}" alt=""></a>
                                             </div>
                 
+                                            <div class="sale">Save Rs. {{$product->saved_customer}}</div>
+
                                             <ul>
                                                 <li class="w-icon active"><a onclick="showForm()">Buy now</a></li>
                                                 
@@ -307,6 +311,8 @@
                                                 <a onclick="showForm()"><img src="{{ asset('storage/images/'.$product->image)}}" alt=""></a>
                                             </div>
                 
+                                            <div class="sale">Save Rs. {{$product->saved_customer}}</div>
+
                                             <ul>
                                                 <li class="w-icon active"><a onclick="showForm()">Buy now</a></li>
                                                 

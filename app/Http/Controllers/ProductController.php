@@ -11,7 +11,7 @@ class ProductController extends Controller
 {
     public function __construct()
     {
-        $this->middleware('auth');
+        $this->middleware(['auth','prevent-back-history']);
     }
 
 
@@ -40,7 +40,7 @@ class ProductController extends Controller
     {
         $this->validate($request, [
             'type' => 'required | string | max:255',
-            'model' => 'required | string | max:255',
+            'model' => 'required | string| max:255',
             'size' => 'required | string | max:255',
             'mrp' => 'required|regex:/^\d+(\.\d{1,2})?$/',
             'offer_price' => 'required|regex:/^\d+(\.\d{1,2})?$/',
@@ -115,7 +115,8 @@ class ProductController extends Controller
      */
     public function destroy($id)
     {
-        $product = Products::find($id)->first();
+        $product = Products::find($id);
+        // return $product;
         if($product->image != "noimage.jpg"){
             Storage::delete('public/images/'.$product->image);
         }

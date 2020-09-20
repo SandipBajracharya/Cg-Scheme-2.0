@@ -279,7 +279,7 @@
     }
 
     .footer-img-sm {
-        display: flex;
+        display: flex !important;
         justify-content: center;
     }
 
@@ -295,6 +295,7 @@
     
     #popup-img {
         width: 370px !important;
+        height: 250px;
     }
 }
 
@@ -334,6 +335,7 @@
     .show-img {
         display: block;
     }
+
 }
 
 @media only screen and (min-device-width: 991px) {
@@ -341,6 +343,11 @@
     .show-img {
         display: none;
     }
+
+    /* #popup-img {
+        width: 300px !important;
+        height: 200px !important;
+    } */
 }
 
 

@@ -7,6 +7,11 @@ use App\Models\Products;
 
 class TCLController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('prevent-back-history');
+    }
+
     public function index()
     {
         $posts = Products::all();
