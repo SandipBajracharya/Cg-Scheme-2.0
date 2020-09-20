@@ -1,8 +1,6 @@
 @extends('layouts.app')
 
 @section('content')
-    @include('inc.TCL.navbarLandingTCL') 
-    @include('inc.TCL.navbarSmall')
     <div class="page-pad mobile-pad">
         <div class="container">
             <div class="col-lg-10 offset-lg-1">
@@ -33,6 +31,4 @@
             </div>
         </div>
     </div>
-
-    @include('inc.TCL.footerLandingTCL')
 @endsection

@@ -10,7 +10,7 @@
                     <div class="product-item">
                         <div class="pi-pic">
                             <div class="card-body bg-blue-light">
-                                <a onclick="showForm()"><img src="{{ asset('Theme/img/TCL-landing/TV.jpg')}}" alt=""></a>
+                                <a onclick="showForm()"><img src="{{ asset('Theme/img/products/BA03.jpg')}}" alt=""></a>
                             </div>
 
                             <ul>
@@ -35,7 +35,7 @@
                     <div class="product-item">
                         <div class="pi-pic">
                             <div class="card-body bg-blue-light">
-                                <a onclick="showForm()"><img src="{{ asset('Theme/img/TCL-landing/TV.jpg')}}" alt=""></a>
+                                <a onclick="showForm()"><img src="{{ asset('Theme/img/products/6A04.jpg')}}" alt=""></a>
                             </div>
 
                             <ul>
@@ -60,7 +60,7 @@
                     <div class="product-item">
                         <div class="pi-pic">
                             <div class="card-body bg-blue-light">
-                                <a onclick="showForm()"><img src="{{ asset('Theme/img/TCL-landing/TV.jpg')}}" alt=""></a>
+                                <a onclick="showForm()"><img src="{{ asset('Theme/img/products/DA05.jpg')}}" alt=""></a>
                             </div>
                             {{-- <div class="sale">Save 39%</div> --}}
 
@@ -86,7 +86,7 @@
                     <div class="product-item">
                         <div class="pi-pic">
                             <div class="card-body bg-blue-light">
-                                <a onclick="showForm()"><img src="{{ asset('Theme/img/TCL-landing/TV.jpg')}}" alt=""></a>
+                                <a onclick="showForm()"><img src="{{ asset('Theme/img/products/70-02GM.jpg')}}" alt=""></a>
                             </div>
 
                             <ul>
@@ -111,7 +111,7 @@
                     <div class="product-item">
                         <div class="pi-pic">
                             <div class="card-body bg-blue-light">
-                                <a onclick="showForm()"><img src="{{ asset('Theme/img/TCL-landing/TV.jpg')}}" alt=""></a>
+                                <a onclick="showForm()"><img src="{{ asset('Theme/img/products/80-02GM.jpg')}}" alt=""></a>
                             </div>
 
                             <ul>

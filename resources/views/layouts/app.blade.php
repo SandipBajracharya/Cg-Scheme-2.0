@@ -36,13 +36,15 @@
         <div class="loader"></div>
     </div>
 
-    {{-- @include('inc.navbar') --}}
+    @include('inc.TCL.navbarLandingTCL') 
+    @include('inc.TCL.navbarSmall')
     
         @yield('content')
 
-    {{-- @include('inc.footer') --}}
     @include('inc.stickyMenu')
     @include('inc.popup-form')
+    
+    @include('inc.TCL.footerLandingTCL')
     <!-- Js Plugins -->
     <script src=" {{ asset('Theme/js/jquery-3.3.1.min.js')}}"></script>
     <script src=" {{ asset('Theme/js/bootstrap.min.js')}}"></script>

@@ -5,12 +5,14 @@
                 <strong>Categories/ TV</strong>
             </div>
 
+            @if(count($posts)>1)
             <div id="carousel" class="product-slider owl-carousel">
+                @foreach($posts as $product)
                 <div class="item">
                     <div class="product-item">
                         <div class="pi-pic">
                             <div class="card-body bg-blue-light">
-                                <a onclick="showForm()"><img src="{{ asset('Theme/img/TCL-landing/TV.jpg')}}" alt=""></a>
+                                <a onclick="showForm()"><img src="{{ asset('storage/images/'.$product->image)}}" alt=""></a>
                             </div>
 
                             <ul>
@@ -30,7 +32,10 @@
                         </div>
                     </div> 
                 </div>
-                <div class="item">
+                
+                @endforeach
+                @endif
+                {{--<div class="item">
                     <div class="product-item">
                         <div class="pi-pic">
                             <div class="card-body bg-blue-light">
@@ -62,7 +67,7 @@
                             </div>
                             {{-- <div class="sale">Save 39%</div> --}}
 
-                            <ul>
+                            {{--<ul>
                                 <li class="w-icon active"><a onclick="showForm()">Buy now</a></li>
                                 
                             </ul>
@@ -135,7 +140,7 @@
                             </div>
                             {{-- <div class="sale">30% off</div> --}}
 
-                            <ul>
+                        {{--}   <ul>
                                 <li class="w-icon active"><a onclick="showForm()">Buy now</a></li>
                                 
                             </ul>
@@ -151,7 +156,7 @@
                             </div>
                         </div>
                     </div>
-                </div>  
+                </div>   --}}
             </div>
         </div>
     </div>

@@ -358,3 +358,17 @@
     font-weight: 700;
     text-transform: uppercase;
 }
+
+/*------------------- end ----------*/
+
+.error-page {
+    width: 100%;
+    height: 100%;
+}
+
+.error-message h4{
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    text-align: center;
+}

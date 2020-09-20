@@ -24,3 +24,9 @@ Route::get('/tcl/download', [TCLController::class, 'catalog_download'])->name('t
 
 use App\Http\Controllers\ContactController;
 Route::post('/tcl/contact-save', [ContactController::class, 'contact_save'])->name('contact.save');
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+use App\Http\Controllers\ProductController;
+Route::resource('/products',ProductController::class);

@@ -3,12 +3,14 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Products;
 
 class TCLController extends Controller
 {
     public function index()
     {
-        return view('TCL.tcl_landing');
+        $posts = Products::all();
+        return view('TCL.tcl_landing')->with('posts', $posts);
     }
 
     public function aboutTcl()
