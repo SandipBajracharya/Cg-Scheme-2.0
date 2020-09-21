@@ -6,9 +6,9 @@
         <div class="hero-items owl-carousel">
             <div class="single-hero-items set-bg" data-setbg="{{ asset('/Theme/img/top-slider/tcl-1.jpg')}}">
             </div>
-            <div class="single-hero-items set-bg" data-setbg="{{ asset('/Theme/img/top-slider/tcl--2.jpg')}}">
+            {{-- <div class="single-hero-items set-bg" data-setbg="{{ asset('/Theme/img/top-slider/tcl--2.jpg')}}">
             </div>
-            <div class="single-hero-items set-bg" data-setbg="{{ asset('/Theme/img/top-slider/tcl--3.jpg')}}"></div>
+            <div class="single-hero-items set-bg" data-setbg="{{ asset('/Theme/img/top-slider/tcl--3.jpg')}}"></div> --}}
             {{-- <div class="single-hero-items set-bg" data-setbg="{{ asset('/Theme/img/top-slider/4.jpg')}}"></div> --}}
         </div>
     </section>

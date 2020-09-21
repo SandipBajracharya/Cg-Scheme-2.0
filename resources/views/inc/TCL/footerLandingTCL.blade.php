@@ -1,4 +1,4 @@
-<footer class=" bg-light pt-2 mt-3" id="contact">
+<footer class="pt-2 mt-3" style="background-color: #e5e7ea;" id="contact">
     <div class="col-lg-12">
         <div class="footer-img-sm">
             <img src=" {{ asset('/Theme/img/TCL-landing/scan2.png')}} " alt="" style="max-height: 111px; padding-top: 12px; padding-right: 5px;">
@@ -9,7 +9,7 @@
             <div class="col-lg-10">
                 <div class="tcl-landing-footer">
                     <div class="row pl-3">
-                        <img src=" {{ asset('/Theme/img/ChaudharyGroup.png')}} " alt="" style="max-height: 25px;">
+                        <img src=" {{ asset('/Theme/img/CG_EOL4.JPG')}} " alt="" style="height: 35px;" class="pr-4">
                         <div class="footer-element ml-2">
                             <div class="col-sm-7 pr-0">
                                 <strong> For contact </strong> (Service Only) <br /> +977-9801571717 | 01-5188185 

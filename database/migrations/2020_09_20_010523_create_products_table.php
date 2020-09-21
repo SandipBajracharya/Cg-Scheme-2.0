@@ -22,7 +22,7 @@ class CreateProductsTable extends Migration
             $table->float('offer_price');
             $table->float('saved_customer');
             $table->string('category');
-            $table->string('image');
+            $table->string('image')->nullable();
             $table->timestamps();
         });
     }

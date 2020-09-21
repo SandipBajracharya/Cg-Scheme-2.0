@@ -14,14 +14,14 @@
           <ul class="px-5 navbar-nav w-100 d-flex justify-content-between align-items-center">
                 <div class="d-flex">
                     <li class="nav-item nav__item">
-                        <a class="nav-link" href="/tcl">Home</a>
+                        <a class="nav-link" href="/">Home</a>
                       </li>
                       <li class="nav-item nav__item ml-5">
-                        <a class="nav-link" href="/tcl/about-tcl">About TCL</a>
+                        <a class="nav-link" href="/about-tcl">About TCL</a>
                       </li>
                 </div>
               <li class="hide-img">
-                <a href="/tcl">
+                <a href="/">
                     <img class="tcl-landing-logo" src="/Theme/img/brands/TCL.PNG">
                 </a>
               </li>

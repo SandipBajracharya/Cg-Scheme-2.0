@@ -16,7 +16,7 @@
         <div class="row justify-content-center">
             {{-- <div class="col-md-10"> --}}
                 <div class="card bg-light p-4">
-                    <table class="table table-stripped table-hover">
+                    <table class="table table-stripped table-hover text-center">
                         <tr>
                             <th>Id</th>
                             <th>Type</th>
@@ -25,7 +25,7 @@
                             <th>Offer Price</th>
                             <th>Saved by Customer</th>
                             <th>Category</th>
-                            <th>Actions</th>
+                            <th colspan=2>Actions</th>
                         </tr>
 
                         @if(count($products)>0)
@@ -38,6 +38,9 @@
                                     <td>{{$product->offer_price}}</td>
                                     <td>{{$product->saved_customer}}</td>
                                     <td>{{$product->category}}</td>
+                                    <td>
+                                        <a href="/products/{{$product->id}}/edit" class="btn btn-info btn-sm">Edit</a>
+                                    </td>
                                     <td>
                                         <form action=" {{ route('products.destroy', $product->id)}} " method="POST" onsubmit="whenClick(event)"> 
                                             @csrf

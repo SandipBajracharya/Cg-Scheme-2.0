@@ -18,12 +18,12 @@ use Illuminate\Support\Facades\Route;
 // });
 
 use App\Http\Controllers\TCLController;
-Route::get('/tcl', [TCLController::class, 'index'])->name('tcl.index');
-Route::get('/tcl/about-tcl', [TCLController::class, 'aboutTCL'])->name('tcl.about');
-Route::get('/tcl/download', [TCLController::class, 'catalog_download'])->name('tcl.catalog');
+Route::get('/', [TCLController::class, 'index'])->name('tcl.index');
+Route::get('/about-tcl', [TCLController::class, 'aboutTCL'])->name('tcl.about');
+Route::get('/download', [TCLController::class, 'catalog_download'])->name('tcl.catalog');
 
 use App\Http\Controllers\ContactController;
-Route::post('/tcl/contact-save', [ContactController::class, 'contact_save'])->name('contact.save');
+Route::post('/contact-save', [ContactController::class, 'contact_save'])->name('contact.save');
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
