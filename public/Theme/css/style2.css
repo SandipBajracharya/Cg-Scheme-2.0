@@ -1,9 +1,12 @@
 /*----------------- Parallax effect ----------------------*/
 
-.parallax-container-about {
-    background-image: url('/Theme/img/news&media/News.jpg');
+.parallax-banner{
+    background-image: url('/Theme/img/top-slider/tcl-1-2.jpg');
     background-attachment: fixed;
     background-size: cover;
+    height: 100%;
+    /* padding-top: 90px; */
+    /* background: center; */
 }
 
 .parallax-body {
@@ -243,6 +246,7 @@
         display: none;
     }
 
+
 }
 
 @media only screen and (max-device-width: 640px) {
@@ -297,6 +301,7 @@
         width: 370px !important;
         height: 250px;
     }
+    
 }
 
 @media only screen and (max-device-width: 767px) {
@@ -325,6 +330,7 @@
     .mobile-pad {
         padding-top: 30px;
     }
+    
 }
 
 @media only screen and (max-device-width: 991px) {
@@ -336,11 +342,30 @@
         display: block;
     }
 
+    
+    .parallax-banner
+    {
+        display: none;
+    }
+
+    .top-banner-lg {
+        display: block;
+    }
 }
 
 @media only screen and (min-device-width: 991px) {
 
     .show-img {
+        display: none;
+    }
+
+
+    .parallax-banner
+    {
+        display: block;
+    }
+
+    .top-banner-lg {
         display: none;
     }
 
@@ -378,4 +403,10 @@
     justify-content: center;
     align-items: center; */
     text-align: center;
+}
+
+.iso {
+    border: 1px solid #333;
+    border-radius: 15px;
+    padding: 2px 5px;
 }

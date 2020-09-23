@@ -4394,9 +4394,9 @@ ol {
 		font-size: 12px;
 	}
 	.hero-items .single-hero-items {
-		padding: 110px 25px 80px;
+		padding: 108px 25px 65px;
 		height: auto;
-		background: left center;
+		/* background: left center; */
 	}
 	.hero-items .single-hero-items h1 {
 		font-size: 40px;
@@ -6165,11 +6165,11 @@ ol {
 
 	.footer-element {
 		display: flex;
-		line-height: 1.8em;
+		line-height: 1.5em;
 		font-size: 13px;
 		border-left: 1px solid #333;
 		/* border-right: 1px solid #333; */
-		width: 320px;
+		/* width: 320px; */
 		/* margin: 0px 7px; */
 	}
 

@@ -11,8 +11,13 @@
             </a>
         </li>
         <li>
+            <a href="https://invite.viber.com/g2=AQBE7i4Xm3KoOkuakqB9A6cwnr8T6JneHg5NXrmiEGcWRCPbHJMfUT0X0gG%2FmLep" title="Instagram" target="_blank">
+                <img src="{{ asset('Theme/img/icons/viber3.png')}}" alt="Viber">
+            </a>
+        </li>
+        <li>
             <a href="https://www.youtube.com/user/TCLTheCreativeLife?fbclid=IwAR0oB_BziE02MHaWc_sI_jw4x623EPqcwKjjmKCHfp7a0DYEboM0ZgOQCxs" title="Youtube" target="_blank">
-                <img src="{{ asset('Theme/img/icons/Youtube.png')}}" alt="Youtube">
+                <img src="{{ asset('Theme/img/icons/youtube.png')}}" alt="Youtube">
             </a>
         </li>
         {{-- <li>

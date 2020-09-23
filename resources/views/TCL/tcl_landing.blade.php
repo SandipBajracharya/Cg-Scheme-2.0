@@ -2,23 +2,22 @@
 
 @section('content')
 
-    <section class="hero-section">
-        <div class="hero-items owl-carousel">
-            <div class="single-hero-items set-bg" data-setbg="{{ asset('/Theme/img/top-slider/tcl-1.jpg')}}">
-            </div>
-            {{-- <div class="single-hero-items set-bg" data-setbg="{{ asset('/Theme/img/top-slider/tcl--2.jpg')}}">
-            </div>
-            <div class="single-hero-items set-bg" data-setbg="{{ asset('/Theme/img/top-slider/tcl--3.jpg')}}"></div> --}}
-            {{-- <div class="single-hero-items set-bg" data-setbg="{{ asset('/Theme/img/top-slider/4.jpg')}}"></div> --}}
-        </div>
-    </section>
-
-    <div id="popup-container-img">
-        <div id="popup-img">
-            {{-- <img src=" {{ asset('/Theme/img/preload.jpg')}} " alt=""> --}}
-            <button type="button" class="btn" onclick="closeImg()" id="close-img"><i class="fa fa-times" aria-hidden="true"></i></button>
+<section class="hero-section top-banner-lg">
+    <div class="hero-items owl-carousel">
+        <div class="single-hero-items set-bg" data-setbg="{{ asset('/Theme/img/top-slider/tcl-1-2.JPG')}}" >
         </div>
     </div>
+</section>
+
+    <div class="page-pad parallax-banner">
+    </div>
+
+    {{-- <div id="popup-container-img">
+        <div id="popup-img"> --}}
+            {{-- <img src=" {{ asset('/Theme/img/preload.jpg')}} " alt=""> --}}
+            {{-- <button type="button" class="btn" onclick="closeImg()" id="close-img"><i class="fa fa-times" aria-hidden="true"></i></button>
+        </div>
+    </div> --}}
 
     {{-- <div style=" overflow: hidden;">
         <div class="py-4 px-2">
@@ -227,6 +226,7 @@
                                         <a href="">
                                             <h5>{{$product->type}}</h5>
                                         </a>
+                                        {{$product->size}}
                                         <div class="product-price">
                                             Rs. {{$product->offer_price}}
                                             <span>Rs. {{$product->MRP}}</span>
@@ -242,54 +242,6 @@
             </div>
         </div>
     </div>
-    {{-- end --}}
-
-    {{-- Air conditioner --}}
-        <div class="container">
-            <div class="card-body">
-                <div class="owl-slider">
-                    <div class="pl-2">
-                        <strong>Categories/ Water Dispenser</strong>
-                    </div>
-        
-                    <div id="carousel" class="product-slider owl-carousel">
-                        @if(count($posts)>0)
-                            @foreach($posts as $product)
-                                @if($product->category == "water dispenser")
-                                <div class="item">
-                                    <div class="product-item">
-                                        <div class="pi-pic">
-                                            <div class="card-body bg-blue-light">
-                                                <a onclick="showForm()"><img src="{{ asset('storage/images/'.$product->image)}}" alt=""></a>
-                                            </div>
-                
-                                            <div class="sale">Save Rs. {{$product->saved_customer}}</div>
-
-                                            <ul>
-                                                <li class="w-icon active"><a onclick="showForm()">Buy now</a></li>
-                                                
-                                            </ul>
-                                        </div>
-                                        <div class="pi-text">
-                                            <div class="catagory-name">{{$product->model_no}}</div>
-                                            <a href="">
-                                                <h5>{{$product->type}}</h5>
-                                            </a>
-                                            <div class="product-price">
-                                                Rs. {{$product->offer_price}}
-                                                <span>Rs. {{$product->MRP}}</span>
-                                            </div>
-                                        </div>
-                                    </div> 
-                                </div>
-                                @endif
-                            @endforeach
-                        @endif
-
-                    </div>
-                </div>
-            </div>
-        </div>
     {{-- end --}}
 
     {{-- Washing machine --}}
@@ -323,6 +275,7 @@
                                             <a href="">
                                                 <h5>{{$product->type}}</h5>
                                             </a>
+                                            {{$product->size}}
                                             <div class="product-price">
                                                 Rs. {{$product->offer_price}}
                                                 <span>Rs. {{$product->MRP}}</span>
@@ -339,6 +292,105 @@
         </div>
     </div>
     {{-- end --}}
+
+        {{-- Ai Conditioner --}}
+        <div class="container">
+            <div class="card-body">
+                <div class="owl-slider">
+                    <div class="pl-2">
+                        <strong>Categories/ Air Conditioner (Free Installation)</strong>
+                    </div>
+        
+                    <div id="carousel" class="product-slider owl-carousel">
+                        @if(count($posts)>0)
+                            @foreach($posts as $product)
+                                @if($product->category == "air conditioner")
+                                    <div class="item">
+                                        <div class="product-item">
+                                            <div class="pi-pic">
+                                                <div class="card-body bg-blue-light">
+                                                    <a onclick="showForm()"><img src="{{ asset('storage/images/'.$product->image)}}" alt=""></a>
+                                                </div>
+                    
+                                                {{-- <div class="sale">Save Rs. {{$product->saved_customer}}</div> --}}
+    
+                                                <ul>
+                                                    <li class="w-icon active"><a onclick="showForm()">Buy now</a></li>
+                                                    
+                                                </ul>
+                                            </div>
+                                            <div class="pi-text">
+                                                <div class="catagory-name">{{$product->model_no}}</div>
+                                                <a href="">
+                                                    <h5>{{$product->type}}</h5>
+                                                </a>
+                                                {{$product->size}}
+                                                <div class="product-price">
+                                                    Rs. {{$product->offer_price}}
+                                                    {{-- <span>Rs. {{$product->MRP}}</span> --}}
+                                                </div>
+                                            </div>
+                                        </div> 
+                                    </div>
+                                @endif
+                            @endforeach
+                        @endif
+    
+                    </div>
+                </div>
+            </div>
+        </div>
+        {{-- end --}}
+
+    {{-- Others --}}
+    <div class="container">
+        <div class="card-body">
+            <div class="owl-slider">
+                <div class="pl-2">
+                    <strong>Categories/ Others</strong>
+                </div>
+    
+                <div id="carousel" class="product-slider owl-carousel">
+                    @if(count($posts)>0)
+                        @foreach($posts as $product)
+                            @if($product->category == "others")
+                            <div class="item">
+                                <div class="product-item">
+                                    <div class="pi-pic">
+                                        <div class="card-body bg-blue-light">
+                                            <a onclick="showForm()"><img src="{{ asset('storage/images/'.$product->image)}}" alt=""></a>
+                                        </div>
+            
+                                        <div class="sale">Save Rs. {{$product->saved_customer}}</div>
+
+                                        <ul>
+                                            <li class="w-icon active"><a onclick="showForm()">Buy now</a></li>
+                                            
+                                        </ul>
+                                    </div>
+                                    <div class="pi-text">
+                                        <div class="catagory-name">{{$product->model_no}}</div>
+                                        <a href="">
+                                            <h5>{{$product->type}}</h5>
+                                        </a>
+                                        {{$product->size}}
+                                        <div class="product-price">
+                                            Rs. {{$product->offer_price}}
+                                            <span>Rs. {{$product->MRP}}</span>
+                                        </div>
+                                    </div>
+                                </div> 
+                            </div>
+                            @endif
+                        @endforeach
+                    @endif
+
+                </div>
+            </div>
+        </div>
+    </div>
+{{-- end --}}
+
 
     {{-- @include('inc.airConditionerProducts') --}}
     {{-- @include('inc.washingMachines') --}}

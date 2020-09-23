@@ -63,7 +63,7 @@
                     <label for="mrp" class="col-md-4 col-form-label text-md-right">{{ __('MRP') }}</label>
 
                     <div class="col-md-6">
-                        <input id="mrp" type="number" class="form-control @error('mrp') is-invalid @enderror" name="mrp" value="{{ $product->MRP}}" required autocomplete="mrp" autofocus>
+                        <input id="mrp" type="number" class="form-control @error('mrp') is-invalid @enderror" name="mrp" value="{{ $product->MRP}}" autocomplete="mrp" autofocus>
 
                         @error('mrp')
                             <span class="invalid-feedback" role="alert">
@@ -77,7 +77,7 @@
                     <label for="offer_price" class="col-md-4 col-form-label text-md-right">{{ __('Offer Price') }}</label>
 
                     <div class="col-md-6">
-                        <input id="offer_price" type="number" class="form-control @error('offer_price') is-invalid @enderror" name="offer_price" value="{{ $product->offer_price }}" required autocomplete="offer_price" autofocus>
+                        <input id="offer_price" type="number" class="form-control @error('offer_price') is-invalid @enderror" name="offer_price" value="{{ $product->offer_price }}" autocomplete="offer_price" autofocus>
 
                         @error('offer_price')
                             <span class="invalid-feedback" role="alert">
@@ -91,7 +91,7 @@
                     <label for="save_customer" class="col-md-4 col-form-label text-md-right">{{ __('Saved by Customer') }}</label>
 
                     <div class="col-md-6">
-                        <input id="save_customer" type="text" class="form-control @error('save_customer') is-invalid @enderror" name="save_customer" value="{{ $product->saved_customer }}" required autocomplete="save_customer" autofocus>
+                        <input id="save_customer" type="text" class="form-control @error('save_customer') is-invalid @enderror" name="save_customer" value="{{ $product->saved_customer }}" autocomplete="save_customer" autofocus>
 
                         @error('save_customer')
                             <span class="invalid-feedback" role="alert">
@@ -108,7 +108,8 @@
                         <select id="category" class="form-control @error('category') is-invalid @enderror" name="category" value="" required autocomplete="category" autofocus>
                             <option value="television">Television</option>
                             <option value="washing machine">Washine Machine</option>
-                            <option value="water dispenser">Water Dispenser</option>
+                            <option value="air conditioner">Air Conditioner</option>
+                            <option value="others">Others</option>
                         </select>
                     </div>
                 </div>

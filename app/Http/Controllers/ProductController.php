@@ -42,9 +42,9 @@ class ProductController extends Controller
             'type' => 'required | string | max:255',
             'model' => 'required | string| max:255',
             'size' => 'required | string | max:255',
-            'mrp' => 'required|regex:/^\d+(\.\d{1,2})?$/',
-            'offer_price' => 'required|regex:/^\d+(\.\d{1,2})?$/',
-            'save_customer' => 'required|regex:/^\d+(\.\d{1,2})?$/',
+            'mrp' => 'nullable|regex:/^\d+(\.\d{1,2})?$/',
+            'offer_price' => 'nullable|regex:/^\d+(\.\d{1,2})?$/',
+            'save_customer' => 'nullable|regex:/^\d+(\.\d{1,2})?$/',
             'image' => 'image|max:1999|nullable',
         ]);
 
@@ -112,9 +112,9 @@ class ProductController extends Controller
             'type' => 'required | string | max:255',
             'model' => 'required | string| max:255',
             'size' => 'required | string | max:255',
-            'mrp' => 'required|regex:/^\d+(\.\d{1,2})?$/',
-            'offer_price' => 'required|regex:/^\d+(\.\d{1,2})?$/',
-            'save_customer' => 'required|regex:/^\d+(\.\d{1,2})?$/'
+            'mrp' => 'nullable|regex:/^\d+(\.\d{1,2})?$/',
+            'offer_price' => 'nullable|regex:/^\d+(\.\d{1,2})?$/',
+            'save_customer' => 'nullable|regex:/^\d+(\.\d{1,2})?$/'
         ]);
         
         $product = Products::where('id','=',$id)->first();
